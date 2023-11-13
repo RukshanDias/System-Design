@@ -28,3 +28,10 @@
 ### Responsibility of architect
 - "Developer knows what CAN be done - architect knows what SHOULD be done"
 - Baseline Requirements: **Fast, Secure, Reliable, Easy to maintain**
+
+### Organizational Chart of an architect
+- *include img here*
+- Career Paths:
+  - Dev -> Architect : common in small companies, >3 years of experience
+  - Dev -> Team Lead ->Jr.Architect / Proj.Manager : Common path
+  - Dev -> Team Lead -> Proj.Manager -> Sr.Architect : Can become an enterprise architect
