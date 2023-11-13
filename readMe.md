@@ -1,6 +1,6 @@
 # System Design
 ### Content
-1. What is Software Architect
+1. [What is Software Architect](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#whats-software-architect)
 2. The Architectural mindset
 3. The Architecture process
 4. Working with System Requirments
@@ -35,3 +35,5 @@
   - Dev -> Architect : common in small companies, >3 years of experience
   - Dev -> Team Lead ->Jr.Architect / Proj.Manager : Common path
   - Dev -> Team Lead -> Proj.Manager -> Sr.Architect : Can become an enterprise architect
+
+---
