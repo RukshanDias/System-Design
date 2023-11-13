@@ -13,7 +13,7 @@
 ---
 
 ## What's Software Architect
-- **3 main types of architectures**
+### 3 main types of architectures
 - Infrastructure Architect
   - Designs the infrastructure of system (all non-software elements).
   - This includes Servers, VMs, Networks, Storage, etc:
@@ -24,3 +24,7 @@
 - Enterprise Architect
   - These people works with the top management.
   - No development-oriented tasks.
+
+### Responsibility of architect
+- "Developer knows what CAN be done - architect knows what SHOULD be done"
+- Baseline Requirements: **Fast, Secure, Reliable, Easy to maintain**
