@@ -11,3 +11,16 @@
 9. System Architecture
 10. Other Considerations
 ---
+
+## What's Software Architect
+- **3 main types of architectures**
+- Infrastructure Architect
+  - Designs the infrastructure of system (all non-software elements).
+  - This includes Servers, VMs, Networks, Storage, etc:
+  - He should be fermiliar with system requirments.
+- Software Architect
+  - Also called as Solution, System architect.
+  - Responsible for the architecture of the software.
+- Enterprise Architect
+  - These people works with the top management.
+  - No development-oriented tasks.
