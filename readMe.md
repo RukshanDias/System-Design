@@ -44,3 +44,16 @@
     -   Dev -> Team Lead -> Proj.Manager -> Sr.Architect : Can become an enterprise architect
 
 ---
+
+## The Architectural mindset
+- Areas to focus on :
+    - Weakness
+	- Strengths
+    - Competition
+    - Growth Strategy
+    - Understanding the true north
+
+
+
+
+
