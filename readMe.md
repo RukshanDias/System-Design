@@ -58,12 +58,31 @@
 ## The Architecture process
 ### Steps:
 1. Understand system requirements
+    - 'What the system should Do'
+    - Defined by system analyst
 2. Understand non-functional requirements
+    - Technical & service level attributes.
+    - eg: Loads, volumes, performance
+    - Much more important than regular reqirements.
+    - Should be discussed with clients & system analyst.
 3. Map components
+    - Represent tasks of the system.
+    - A simple idea on how the system should work.
+    - 2 Goals:
+        - Understand system functionality.
+        - Communicate your understanding to the client.
 4. Select Tech-stack
+    - For Backend, FrontEnd and DataStore
+    - Have to consider lot of factors when selecting.
 5. Design architecture
+    - Qualities of a well designed system:
+        - loose coupling
+        - Stateless
+        - Scaling
+        - Caching & more..
 6. Write architecture document
-- 
+    - Describes the full process of the system.
+    - Must be relevent for all participent.
 
-
+---
 
