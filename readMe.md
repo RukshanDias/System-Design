@@ -57,6 +57,8 @@
 
 ## The Architecture process
 ### Steps:
+![architectural process setps](imgs/architectural%20process.png)
+
 1. Understand system requirements
     - 'What the system should Do'
     - Defined by system analyst
