@@ -87,4 +87,12 @@
     - Must be relevent for all participent.
 
 ---
+## Working with System Requirments
 
+- There're 2 main types of requirements:
+    - Functional requirments:
+        - What the system should do.
+        - Business flow, User interface, Business services
+    - Non-functional requirements:
+        - What should the system Deal with.
+        - Load, performance, concurrent users
