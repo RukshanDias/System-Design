@@ -3,8 +3,8 @@
 ### Content
 
 1. [What is Software Architect](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#whats-software-architect)
-2. The Architectural mindset
-3. The Architecture process
+2. [The Architectural mindset](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architectural-mindset)
+3. [The Architecture process](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architecture-process)
 4. Working with System Requirements
 5. Types of Applications
 6. Selecting Tech-Stacks
@@ -57,7 +57,7 @@
 
 ## The Architecture process
 ### Steps:
-![architectural process setps](imgs/architectural%20process.png)
+<img src="imgs/architectural%20process.png" alt="architectural process setps" width="400"/>
 
 1. Understand system requirements
     - 'What the system should Do'
