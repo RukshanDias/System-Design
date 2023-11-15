@@ -95,4 +95,47 @@
         - Business flow, User interface, Business services
     - Non-functional requirements:
         - What should the system Deal with.
-        - Load, performance, concurrent users
+        - [Non-functional requirements examples](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples)
+        - Main 5 non-functional requirements:
+            1. Performence
+            2. Load
+            3. Data volume
+            4. Concurrent users
+            5. SLA
+         
+### Performance
+1. Always talk in numbers.
+    - Human are less sensitive to actions that perform in less than 1 second.
+2. Latency:
+    - *"How much time does it take to perform a action"*
+3. Troughput
+    - *"How many taks can be perofrmed in given time frame"*
+  
+### Load
+- Quantity of work without crashing.
+- No of API requests without crahing.
+- Always plan for extream cases.
+
+### Data Volume
+- How much data the systen will accumulate overtime.
+- Helps decide:
+    - Database type
+    - Designing queries
+    - Storage planing
+- This has 2 aspects:
+    - Volume required on start.
+    - Volume growth.
+ 
+### Concurrent users
+- How many users will be using the system Simultaneosly/sametime.
+- Concurrent users vs Load:
+    - Load: only occur when user perform an action
+    - Concurrent users: Include 'dead times' as well.
+    - **Concurrent = Load x 10**
+ 
+### SLA
+- Service Level Agreement
+- Describe the required Uptime for the system. Used in public cloud providers.
+- Server Uptime.
+
+---
