@@ -5,7 +5,7 @@
 1. [What is Software Architect](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#whats-software-architect)
 2. [The Architectural mindset](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architectural-mindset)
 3. [The Architecture process](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architecture-process)
-4. Working with System Requirements
+4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
 5. Types of Applications
 6. Selecting Tech-Stacks
 7. Components Architecture
@@ -46,17 +46,20 @@
 ---
 
 ## The Architectural mindset
-- Areas to focus on :
-    - Weakness
-    - Strengths
-    - Competition
-    - Growth Strategy
-    - Understanding the true north
+
+-   Areas to focus on :
+    -   Weakness
+    -   Strengths
+    -   Competition
+    -   Growth Strategy
+    -   Understanding the true north
 
 ---
 
 ## The Architecture process
+
 ### Steps:
+
 <img src="imgs/architectural%20process.png" alt="architectural process steps" width="400"/>
 
 1. Understand system requirements
@@ -87,55 +90,61 @@
     - Must be relevant for all participant.
 
 ---
+
 ## Working with System Requirments
 
-- There're 2 main types of requirements:
-    - Functional requirements:
-        - What the system should do.
-        - Business flow, User interface, Business services
-    - Non-functional requirements:
-        - What should the system Deal with.
-        - [Non-functional requirements examples](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples)
-        - Main 5 non-functional requirements:
+-   There're 2 main types of requirements:
+    -   Functional requirements:
+        -   What the system should do.
+        -   Business flow, User interface, Business services
+    -   Non-functional requirements:
+        -   What should the system Deal with.
+        -   [Non-functional requirements examples](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples)
+        -   Main 5 non-functional requirements:
             1. Performance
             2. Load
             3. Data volume
             4. Concurrent users
             5. SLA
-         
+
 ### Performance
+
 1. Always talk in numbers.
     - Human are less sensitive to actions that perform in less than 1 second.
 2. Latency:
-    - *"How much time does it take to perform a action"*
+    - _"How much time does it take to perform a action"_
 3. Troughput
-    - *"How many tasks can be performed in given time frame"*
-  
+    - _"How many tasks can be performed in given time frame"_
+
 ### Load
-- Quantity of work without crashing.
-- No of API requests without crashing.
-- Always plan for extream cases.
+
+-   Quantity of work without crashing.
+-   No of API requests without crashing.
+-   Always plan for extream cases.
 
 ### Data Volume
-- How much data the systen will accumulate overtime.
-- Helps decide:
-    - Database type
-    - Designing queries
-    - Storage planing
-- This has 2 aspects:
-    - Volume required on start.
-    - Volume growth.
- 
+
+-   How much data the systen will accumulate overtime.
+-   Helps decide:
+    -   Database type
+    -   Designing queries
+    -   Storage planing
+-   This has 2 aspects:
+    -   Volume required on start.
+    -   Volume growth.
+
 ### Concurrent users
-- How many users will be using the system Simultaneously/same time.
-- Concurrent users vs Load:
-    - Load: only occur when user perform an action
-    - Concurrent users: Include 'dead times' as well.
-    - **Concurrent = Load x 10**
- 
+
+-   How many users will be using the system Simultaneously/same time.
+-   Concurrent users vs Load:
+    -   Load: only occur when user perform an action
+    -   Concurrent users: Include 'dead times' as well.
+    -   **Concurrent = Load x 10**
+
 ### SLA
-- Service Level Agreement
-- Describe the required Uptime for the system. Used in public cloud providers.
-- Server Uptime.
+
+-   Service Level Agreement
+-   Describe the required Uptime for the system. Used in public cloud providers.
+-   Server Uptime.
 
 ---
