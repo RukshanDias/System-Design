@@ -2,9 +2,9 @@
 
 ### Content
 
-1. [What is Software Architect](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#whats-software-architect)
-2. [The Architectural mindset](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architectural-mindset)
-3. [The Architecture process](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architecture-process)
+1. [What is Software Architect](https://github.com/RukshanDias/System-Design#whats-software-architect)
+2. [The Architectural mindset](https://github.com/RukshanDias/System-Design#the-architectural-mindset)
+3. [The Architecture process](https://github.com/RukshanDias/System-Design#the-architecture-process)
 4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
 5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
 6. Selecting Tech-Stacks
