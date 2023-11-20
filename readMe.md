@@ -6,7 +6,7 @@
 2. [The Architectural mindset](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architectural-mindset)
 3. [The Architecture process](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architecture-process)
 4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
-5. Types of Applications
+5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
 6. Selecting Tech-Stacks
 7. Components Architecture
 8. Design Patterns
@@ -146,5 +146,57 @@
 -   Service Level Agreement
 -   Describe the required Uptime for the system. Used in public cloud providers.
 -   Server Uptime.
+
+---
+
+## Types of Applications
+
+-   This will be decided after requirements are set.
+-   Common types:
+
+    #### 1. Web apps
+
+    -   Most common
+    -   communication between web server & browser using HTTP protocol.
+    -   Request-Response based
+    -   Best for system that requires:
+        -   User Interface
+        -   User initiated actions
+        -   Large scale
+
+    #### 2. Web API
+
+    -   Main difference between Web APP vs API:
+        -   This will serve json data.
+        -   Client are not web browsers but other JS applications.
+    -   **REST API** is the combination of,
+        -   URL
+        -   Parameter ($userId=001)
+        -   HTTP verbs (GET)
+
+    #### 3. Mobile
+
+    -   Usually connects with Web API.
+    -   Best for system that requires:
+        -   High user interaction
+        -   Location sensitive
+
+    #### 4. Console
+
+    -   No Fancy UI.
+    -   Required technical knowledge.
+    -   Limited interaction.
+
+    #### 5. Service
+
+    -   Console vs Service
+        -   No UI at all.
+        -   Managed by Service managers.
+
+    #### 6. Desktop
+
+    -   Has all the resources in PC.
+    -   Lesser connection with internet.
+    -   Best for user centric actions.
 
 ---
