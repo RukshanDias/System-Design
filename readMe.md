@@ -214,3 +214,38 @@
 -   **Main candidates:**
 
     -   <img src="imgs/backend-candidates.png" alt="architectural process steps" width="400"/>
+
+-   **.NET**
+    -   General purpose, object oriented, statically typed language.
+    -   Founded by microsoft.
+    -   Visual Studio is used as the IDE.
+    -   Only for windows based apps.
+    -   Slower than Nodejs.
+-   **.NET Core**
+
+    -   next generation dot net.
+    -   Cross platform & higher performance than previous.
+    -   Not fully implemented yet.
+
+-   **Java**
+
+    -   General purpose, Object oriented, statically typed language.
+    -   Huge community.
+    -   Still a good platform for web apps and APIs.
+
+-   **Nodejs**
+
+    -   Optimized for high-concurrent web apps.
+    -   Javascript based, Dynamically typed language.
+    -   Great performance.
+    -   Not targeted for long running processes. So don't build services with this.
+
+-   **PHP**
+
+    -   easy to learn but messy.
+    -   Focused on Web apps & APIs.
+
+-   **Python**
+    -   Popular scripting language.
+    -   easy to learn & higher community.
+-   ![](imgs/backend-techStack-comparison.png)
