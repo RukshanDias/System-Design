@@ -7,7 +7,7 @@
 3. [The Architecture process](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#the-architecture-process)
 4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
 5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
-6. Selecting Tech-Stacks
+6. [Selecting Tech-Stacks](https://github.com/RukshanDias/System-Design#selecting-technology-stack)
 7. Components Architecture
 8. Design Patterns
 9. System Architecture
@@ -200,3 +200,17 @@
     -   Best for user centric actions.
 
 ---
+
+## Selecting Technology stack
+
+-   3 Considerations on selecting tech-stack:
+    1.  Can perform the required task.
+    2.  Community: Stackoverflow
+    3.  Popularity/trend: can check on google trend
+
+#### Backend & service technology
+
+-   <img src="imgs/techStack-backend.png" alt="architectural process steps" width="400"/>
+-   **Main candidates:**
+
+    -   <img src="imgs/backend-candidates.png" alt="architectural process steps" width="400"/>
