@@ -318,3 +318,20 @@
 -   Desktop apps:
     -   types of desktop app development technologies:
     -   ![](imgs/frontend-desktop-apps.png)
+
+#### Data store
+
+-   There're 2 types of data storing methods:
+    -   relational - SQL
+        -   Stores data in table
+        -   Tables have concrete set of columns.
+        -   Can have relation between tables.
+        -   Transactions: atomic set of actions.
+        -   Querying: SQL
+    -   non-relational - NoSQL
+        -   Main limitations are **Performance** & **Size**
+        -   Emphasis on scale & performance.
+        -   Schema-less
+        -   Data stored in JSON format.
+
+---
