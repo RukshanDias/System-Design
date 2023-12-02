@@ -148,56 +148,62 @@
 -   Server Uptime.
 
 ---
+
 ## Working with System Requirments
 
-- There're 2 main types of requirements:
-    - Functional requirements:
-        - What the system should do.
-        - Business flow, User interface, Business services
-    - Non-functional requirements:
-        - What should the system Deal with.
-        - [Non-functional requirements examples](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples)
-        - Main 5 non-functional requirements:
+-   There're 2 main types of requirements:
+    -   Functional requirements:
+        -   What the system should do.
+        -   Business flow, User interface, Business services
+    -   Non-functional requirements:
+        -   What should the system Deal with.
+        -   [Non-functional requirements examples](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples)
+        -   Main 5 non-functional requirements:
             1. Performance
             2. Load
             3. Data volume
             4. Concurrent users
             5. SLA
-         
+
 ### Performance
+
 1. Always talk in numbers.
     - Human are less sensitive to actions that perform in less than 1 second.
 2. Latency:
-    - *"How much time does it take to perform a action"*
+    - _"How much time does it take to perform a action"_
 3. Troughput
-    - *"How many tasks can be performed in given time frame"*
-  
+    - _"How many tasks can be performed in given time frame"_
+
 ### Load
-- Quantity of work without crashing.
-- No of API requests without crashing.
-- Always plan for extream cases.
+
+-   Quantity of work without crashing.
+-   No of API requests without crashing.
+-   Always plan for extream cases.
 
 ### Data Volume
-- How much data the systen will accumulate overtime.
-- Helps decide:
-    - Database type
-    - Designing queries
-    - Storage planing
-- This has 2 aspects:
-    - Volume required on start.
-    - Volume growth.
- 
+
+-   How much data the systen will accumulate overtime.
+-   Helps decide:
+    -   Database type
+    -   Designing queries
+    -   Storage planing
+-   This has 2 aspects:
+    -   Volume required on start.
+    -   Volume growth.
+
 ### Concurrent users
-- How many users will be using the system Simultaneously/same time.
-- Concurrent users vs Load:
-    - Load: only occur when user perform an action
-    - Concurrent users: Include 'dead times' as well.
-    - **Concurrent = Load x 10**
- 
+
+-   How many users will be using the system Simultaneously/same time.
+-   Concurrent users vs Load:
+    -   Load: only occur when user perform an action
+    -   Concurrent users: Include 'dead times' as well.
+    -   **Concurrent = Load x 10**
+
 ### SLA
-- Service Level Agreement
-- Describe the required Uptime for the system. Used in public cloud providers.
-- Server Uptime.
+
+-   Service Level Agreement
+-   Describe the required Uptime for the system. Used in public cloud providers.
+-   Server Uptime.
 
 ---
 
@@ -277,7 +283,6 @@
 
     -   next generation dot net.
     -   Cross platform & higher performance than previous.
-    -   Not fully implemented yet.
 
 -   **Java**
 
@@ -301,3 +306,15 @@
     -   Popular scripting language.
     -   easy to learn & higher community.
 -   ![](imgs/backend-techStack-comparison.png)
+
+#### Front-end Technology
+
+-   Web apps:
+    -   Combination of html, css, javascript.
+    -   Can use frameworks/libraries for javascript.
+-   Mobile apps:
+    -   3 types: Native, Hybrid, Cross-platform
+    -   ![](imgs/frontend-mobileApps.png)
+-   Desktop apps:
+    -   types of desktop app development technologies:
+    -   ![](imgs/frontend-desktop-apps.png)
