@@ -8,10 +8,13 @@
 4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
 5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
 6. [Selecting Tech-Stacks](https://github.com/RukshanDias/System-Design#selecting-technology-stack)
-7. Components Architecture
-8. Design Patterns
-9. System Architecture
-10. Other Considerations
+7. Meeting the \*-ilities
+8. Components Architecture
+9. Design Patterns
+10. System Architecture
+11. Other Considerations
+12. Architecture document
+13. Advanced topics
 
 ---
 
