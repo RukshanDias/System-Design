@@ -8,14 +8,17 @@
 4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
 5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
 6. [Selecting Tech-Stacks](https://github.com/RukshanDias/System-Design#selecting-technology-stack)
-7. Components Architecture
-8. Design Patterns
-9. System Architecture
-10. Other Considerations
+7. [Meeting the \*-ilities](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#meeting-the--ilities)
+8. Components Architecture
+9. Design Patterns
+10. System Architecture
+11. Other Considerations
+12. Architecture document
+13. Advanced topics
 
 ---
 
-## What's Software Architect
+## 1. What's Software Architect
 
 ### 3 main types of architectures
 
@@ -45,7 +48,7 @@
 
 ---
 
-## The Architectural mindset
+## 2. The Architectural mindset
 
 -   Areas to focus on :
     -   Weakness
@@ -56,7 +59,7 @@
 
 ---
 
-## The Architecture process
+## 3. The Architecture process
 
 ### Steps:
 
@@ -68,7 +71,7 @@
 2. Understand non-functional requirements
     - Technical & service level attributes.
     - eg: Loads, volumes, performance
-    - Much more important than regular reqirements.
+    - Much more important than regular requirements.
     - Should be discussed with clients & system analyst.
 3. Map components
     - Represent tasks of the system.
@@ -91,7 +94,7 @@
 
 ---
 
-## Working with System Requirments
+## 4. Working with System Requirements
 
 -   There're 2 main types of requirements:
     -   Functional requirements:
@@ -120,11 +123,11 @@
 
 -   Quantity of work without crashing.
 -   No of API requests without crashing.
--   Always plan for extream cases.
+-   Always plan for extreme cases.
 
 ### Data Volume
 
--   How much data the systen will accumulate overtime.
+-   How much data the system will accumulate overtime.
 -   Helps decide:
     -   Database type
     -   Designing queries
@@ -149,65 +152,7 @@
 
 ---
 
-## Working with System Requirments
-
--   There're 2 main types of requirements:
-    -   Functional requirements:
-        -   What the system should do.
-        -   Business flow, User interface, Business services
-    -   Non-functional requirements:
-        -   What should the system Deal with.
-        -   [Non-functional requirements examples](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples)
-        -   Main 5 non-functional requirements:
-            1. Performance
-            2. Load
-            3. Data volume
-            4. Concurrent users
-            5. SLA
-
-### Performance
-
-1. Always talk in numbers.
-    - Human are less sensitive to actions that perform in less than 1 second.
-2. Latency:
-    - _"How much time does it take to perform a action"_
-3. Troughput
-    - _"How many tasks can be performed in given time frame"_
-
-### Load
-
--   Quantity of work without crashing.
--   No of API requests without crashing.
--   Always plan for extream cases.
-
-### Data Volume
-
--   How much data the systen will accumulate overtime.
--   Helps decide:
-    -   Database type
-    -   Designing queries
-    -   Storage planing
--   This has 2 aspects:
-    -   Volume required on start.
-    -   Volume growth.
-
-### Concurrent users
-
--   How many users will be using the system Simultaneously/same time.
--   Concurrent users vs Load:
-    -   Load: only occur when user perform an action
-    -   Concurrent users: Include 'dead times' as well.
-    -   **Concurrent = Load x 10**
-
-### SLA
-
--   Service Level Agreement
--   Describe the required Uptime for the system. Used in public cloud providers.
--   Server Uptime.
-
----
-
-## Types of Applications
+## 5. Types of Applications
 
 -   This will be decided after requirements are set.
 -   Common types:
@@ -259,7 +204,7 @@
 
 ---
 
-## Selecting Technology stack
+## 6. Selecting Technology stack
 
 -   3 Considerations on selecting tech-stack:
     1.  Can perform the required task.
@@ -333,5 +278,51 @@
         -   Emphasis on scale & performance.
         -   Schema-less
         -   Data stored in JSON format.
+
+---
+
+## 7. Meeting the \*-ilities
+
+-   \*ilities are **quality attributes** that defines app capabilities.
+
+#### 1. Scalability
+
+-   "Adding computing resources without any interruptions."
+-   Scalability types:
+    1. Scale up - vertical scaling:
+        - increase the cpu of the vm.
+    2. Scale down - horizontal scaling:
+        - adding another vm.
+-   Why scale down is better than scale up?:
+    -   Redundancy - if 1 vm crashes the load can move to the other. Load balancing.
+    -   No limits - cpu power has limit, but no of vm don't
+
+#### 2. Manageability
+
+-   "Knows what's going on and take actions accordingly"
+-   Should have a monitoring platform on app status.
+
+#### 3. Modularity
+
+-   "A system that build from building blocks, that can change without affecting whole system".
+-   On modularizing component, it makes easy to change, test and deploy code.
+
+#### 4. Extensibility
+
+-   "A system that its functionality can be extended without modifying existing code".
+-   Using a plugin framework with dependency injection can be given as examples.
+
+#### 5. Testability
+
+-   "How easy it is to test the application"
+-   Types of testing methods:
+    -   Manual:
+        -   Nothing to do with testability.
+    -   End to end:
+        -   An Automated UI testing.
+    -   Integration:
+        -   Test a method that will trigger chain of action, and result a specific outcome.
+    -   Unit:
+        -   Test methods by passing parameters and whether they're returning correct values.
 
 ---
