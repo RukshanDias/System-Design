@@ -324,3 +324,5 @@
         -   Test a method that will trigger chain of action, and result a specific outcome.
     -   Unit:
         -   Test methods by passing parameters and whether they're returning correct values.
+
+---
