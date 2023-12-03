@@ -280,3 +280,47 @@
         -   Data stored in JSON format.
 
 ---
+
+## Meeting the \*-ilities
+
+-   \*ilities are **quality attributes** that defines app capabilities.
+
+#### 1. Scalability
+
+-   "Adding computing resources without any interruptions."
+-   Scalability types:
+    1. Scale up - vertical scaling:
+        - increase the cpu of the vm.
+    2. Scale down - horizontal scaling:
+        - adding another vm.
+-   Why scale down is better than scale up?:
+    -   Redundancy - if 1 vm crashes the load can move to the other. Load balancing.
+    -   No limits - cpu power has limit, but no of vm don't
+
+#### 2. Manageability
+
+-   "Knows what's going on and take actions accordingly"
+-   Should have a monitoring platform on app status.
+
+#### 3. Modularity
+
+-   "A system that build from building blocks, that can change without affecting whole system".
+-   On modularizing component, it makes easy to change, test and deploy code.
+
+#### 4. Extensibility
+
+-   "A system that its functionality can be extended without modifying existing code".
+-   Using a plugin framework with dependency injection can be given as examples.
+
+#### 5. Testability
+
+-   "How easy it is to test the application"
+-   Types of testing methods:
+    -   Manual:
+        -   Nothing to do with testability.
+    -   End to end:
+        -   An Automated UI testing.
+    -   Integration:
+        -   Test a method that will trigger chain of action, and result a specific outcome.
+    -   Unit:
+        -   Test methods by passing parameters and whether they're returning correct values.
