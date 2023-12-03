@@ -8,7 +8,7 @@
 4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
 5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
 6. [Selecting Tech-Stacks](https://github.com/RukshanDias/System-Design#selecting-technology-stack)
-7. Meeting the \*-ilities
+7. [Meeting the \*-ilities](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#meeting-the--ilities)
 8. Components Architecture
 9. Design Patterns
 10. System Architecture
@@ -18,7 +18,7 @@
 
 ---
 
-## What's Software Architect
+## 1. What's Software Architect
 
 ### 3 main types of architectures
 
@@ -48,7 +48,7 @@
 
 ---
 
-## The Architectural mindset
+## 2. The Architectural mindset
 
 -   Areas to focus on :
     -   Weakness
@@ -59,7 +59,7 @@
 
 ---
 
-## The Architecture process
+## 3. The Architecture process
 
 ### Steps:
 
@@ -94,7 +94,7 @@
 
 ---
 
-## Working with System Requirements
+## 4. Working with System Requirements
 
 -   There're 2 main types of requirements:
     -   Functional requirements:
@@ -152,7 +152,7 @@
 
 ---
 
-## Types of Applications
+## 5. Types of Applications
 
 -   This will be decided after requirements are set.
 -   Common types:
@@ -204,7 +204,7 @@
 
 ---
 
-## Selecting Technology stack
+## 6. Selecting Technology stack
 
 -   3 Considerations on selecting tech-stack:
     1.  Can perform the required task.
@@ -281,7 +281,7 @@
 
 ---
 
-## Meeting the \*-ilities
+## 7. Meeting the \*-ilities
 
 -   \*ilities are **quality attributes** that defines app capabilities.
 
