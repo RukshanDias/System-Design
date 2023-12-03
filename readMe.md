@@ -71,7 +71,7 @@
 2. Understand non-functional requirements
     - Technical & service level attributes.
     - eg: Loads, volumes, performance
-    - Much more important than regular reqirements.
+    - Much more important than regular requirements.
     - Should be discussed with clients & system analyst.
 3. Map components
     - Represent tasks of the system.
@@ -94,7 +94,7 @@
 
 ---
 
-## Working with System Requirments
+## Working with System Requirements
 
 -   There're 2 main types of requirements:
     -   Functional requirements:
@@ -123,69 +123,11 @@
 
 -   Quantity of work without crashing.
 -   No of API requests without crashing.
--   Always plan for extream cases.
+-   Always plan for extreme cases.
 
 ### Data Volume
 
--   How much data the systen will accumulate overtime.
--   Helps decide:
-    -   Database type
-    -   Designing queries
-    -   Storage planing
--   This has 2 aspects:
-    -   Volume required on start.
-    -   Volume growth.
-
-### Concurrent users
-
--   How many users will be using the system Simultaneously/same time.
--   Concurrent users vs Load:
-    -   Load: only occur when user perform an action
-    -   Concurrent users: Include 'dead times' as well.
-    -   **Concurrent = Load x 10**
-
-### SLA
-
--   Service Level Agreement
--   Describe the required Uptime for the system. Used in public cloud providers.
--   Server Uptime.
-
----
-
-## Working with System Requirments
-
--   There're 2 main types of requirements:
-    -   Functional requirements:
-        -   What the system should do.
-        -   Business flow, User interface, Business services
-    -   Non-functional requirements:
-        -   What should the system Deal with.
-        -   [Non-functional requirements examples](https://en.wikipedia.org/wiki/Non-functional_requirement#Examples)
-        -   Main 5 non-functional requirements:
-            1. Performance
-            2. Load
-            3. Data volume
-            4. Concurrent users
-            5. SLA
-
-### Performance
-
-1. Always talk in numbers.
-    - Human are less sensitive to actions that perform in less than 1 second.
-2. Latency:
-    - _"How much time does it take to perform a action"_
-3. Troughput
-    - _"How many tasks can be performed in given time frame"_
-
-### Load
-
--   Quantity of work without crashing.
--   No of API requests without crashing.
--   Always plan for extream cases.
-
-### Data Volume
-
--   How much data the systen will accumulate overtime.
+-   How much data the system will accumulate overtime.
 -   Helps decide:
     -   Database type
     -   Designing queries
