@@ -372,3 +372,53 @@
     -   Layer: code that's part of component.
     -   Tier: Distributed piece of code. independent components.
     -   ![](imgs/layers-vs-tiers.png)
+
+---
+
+## 8. Components Architecture
+
+-   What is Software component?
+    -   A piece of code that runs in a single process. Aka not distributed.
+-   What is distributed systems?
+
+    -   Composed of independent software components.
+    -   Deployed on separate processes, containers, servers.
+    -   Modern systems are usually distributed.
+    -   Communicate using a network protocol.
+    -   examples: Microservices, server application & more.
+    -   ![](imgs/Distributed-System-diagram.png)
+
+-   2 levels of software architecture
+    1. Component's architecture
+        - Deals with inner components of the code.
+        - Interact with other components.
+        - Make the code fast & easy to maintain.
+    2. System architecture
+        - Bigger picture.
+        - Make sure the system is Scalable, Reliable, Fast & Easy to maintain.
+
+#### Layers
+
+-   A good software component will always have layers.
+-   ![layer architecture](imgs/layer-architecture.png)
+-   Purpose of Layers:
+    -   Able to write well formed & focused code.
+    -   modularity.
+-   Concepts of Layers:
+
+    -   **Code flow**:
+        -   A layer can only call a layer that directly benefits the code
+        -   A code can never call a code in a layer above it.
+        -   ![code flow in layer architecture](imgs/layer-codeFlow.png)
+    -   **Loose coupling**
+        -   Layer communicating with each other with minimum impact when there's a change.
+        -   This also called, dependency injection.
+    -   **Exception Handling**
+        -   Each layer must hide it's inner exceptions & not let other layers to know about it.
+
+-   Layer vs Tier
+    -   Layer: code that's part of component.
+    -   Tier: Distributed piece of code. independent components.
+    -   ![](imgs/layers-vs-tiers.png)
+
+---
