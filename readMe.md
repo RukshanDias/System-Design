@@ -349,4 +349,26 @@
         - Bigger picture.
         - Make sure the system is Scalable, Reliable, Fast & Easy to maintain.
 
+#### Layers
 
+-   A good software component will always have layers.
+-   ![layer architecture](imgs/layer-architecture.png)
+-   Purpose of Layers:
+    -   Able to write well formed & focused code.
+    -   modularity.
+-   Concepts of Layers:
+
+    -   **Code flow**:
+        -   A layer can only call a layer that directly benefits the code
+        -   A code can never call a code in a layer above it.
+        -   ![code flow in layer architecture](imgs/layer-codeFlow.png)
+    -   **Loose coupling**
+        -   Layer communicating with each other with minimum impact when there's a change.
+        -   This also called, dependency injection.
+    -   **Exception Handling**
+        -   Each layer must hide it's inner exceptions & not let other layers to know about it.
+
+-   Layer vs Tier
+    -   Layer: code that's part of component.
+    -   Tier: Distributed piece of code. independent components.
+    -   ![](imgs/layers-vs-tiers.png)
