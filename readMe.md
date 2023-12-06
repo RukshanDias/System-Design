@@ -324,3 +324,29 @@
         -   Test a method that will trigger chain of action, and result a specific outcome.
     -   Unit:
         -   Test methods by passing parameters and whether they're returning correct values.
+
+---
+
+## 8. Components Architecture
+
+-   What is Software component?
+    -   A piece of code that runs in a single process. Aka not distributed.
+-   What is distributed systems?
+
+    -   Composed of independent software components.
+    -   Deployed on separate processes, containers, servers.
+    -   Modern systems are usually distributed.
+    -   Communicate using a network protocol.
+    -   examples: Microservices, server application & more.
+    -   ![](imgs/Distributed-System-diagram.png)
+
+-   2 levels of software architecture
+    1. Component's architecture
+        - Deals with inner components of the code.
+        - Interact with other components.
+        - Make the code fast & easy to maintain.
+    2. System architecture
+        - Bigger picture.
+        - Make sure the system is Scalable, Reliable, Fast & Easy to maintain.
+
+
