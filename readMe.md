@@ -8,8 +8,8 @@
 4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
 5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
 6. [Selecting Tech-Stacks](https://github.com/RukshanDias/System-Design#selecting-technology-stack)
-7. [Meeting the \*-ilities](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#meeting-the--ilities)
-8. Components Architecture
+7. [Meeting the \*-ilities](https://github.com/RukshanDias/System-Design#meeting-the--ilities)
+8. [Components Architecture](https://github.com/RukshanDias/System-Design#components-architecture)
 9. Design Patterns
 10. System Architecture
 11. Other Considerations
@@ -421,4 +421,12 @@
     -   Tier: Distributed piece of code. independent components.
     -   ![](imgs/layers-vs-tiers.png)
 
----
+#### Interfaces
+
+-   Declares the signature of an implementation.
+-   This makes code to be loosely coupled.
+-   Always try to use Interfaces, instead of direct reference between classes. (using new keyword)
+
+#### Dependency Injection
+
+-   "A technique where one object supplies the dependencies of another object."
