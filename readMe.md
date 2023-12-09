@@ -430,3 +430,6 @@
 #### Dependency Injection
 
 -   "A technique where one object supplies the dependencies of another object."
+-   Makes the code modular, flexible & easy to maintain.
+-   Dependency injection using _Factory method_.
+    -   ![](imgs/Dependancy%20injection%20example.png)
