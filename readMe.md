@@ -433,3 +433,25 @@
 -   Makes the code modular, flexible & easy to maintain.
 -   Dependency injection using _Factory method_.
     -   ![](imgs/Dependancy%20injection%20example.png)
+
+#### SOLID Principles
+
+[solid principles video 1](https://www.youtube.com/watch?v=kF7rQmSRlq0)
+[solid principles video 2](https://www.youtube.com/watch?v=x2y_lsIdC6c)
+
+![](imgs/SOLID%20principles.png)
+
+-   **Single responsibility**
+
+    -   ![](imgs/Single%20Responsibility%20example.png)
+    -   2 separate methods to compose and write the msg.
+
+-   **Open / Closed**
+    -   Able to extend the functionality without modifying the code.
+-   **Liskov Substitution**
+    -   Every subclass should be substitutable/exchangeable for their parent class. without any errors/issues.
+-   **Interface Segregation**
+    -   ![](imgs/Interface%20Segregation%20Principle.png)
+    -   Allows to implement only necessary functionalities.
+-   **Dependency Inversion**
+    -   High-level module must not depend on the low-level module, but they should depend on abstractions.
