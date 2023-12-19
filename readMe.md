@@ -455,3 +455,37 @@
     -   Allows to implement only necessary functionalities.
 -   **Dependency Inversion**
     -   High-level module must not depend on the low-level module, but they should depend on abstractions.
+
+#### Naming Conventions
+
+-   Set of rules for naming elements. Which makes code more readable.
+-   Two types:
+    1. Structure - casing, underscore
+    2. Content - words used in name
+
+##### 1. Structure
+
+-   Camel Case
+    -   more than one word.
+    -   used for naming CLASSES.
+    -   Upper:
+        -   class **C**arEngine
+    -   Lower
+        -   public **s**tartEngine
+-   Underscore
+    -   words separated with underscore.
+    -   Lower - for naming **variables**.
+        -   num_of_students = 10
+    -   Upper - for naming **constants**.
+        -   CONST DAYS_IN_WEEK = 7
+-   Hungarian Notation
+    -   Data type should be part of the name.
+    -   Mostly used in 90's.
+    -   string strFirstName = "name".
+
+##### 2. Content
+
+-   Class names -> Nouns - entity
+    -   DataRetriever
+-   Method names -> Verbs - action
+    -   RetrieveData
