@@ -489,3 +489,10 @@
     -   DataRetriever
 -   Method names -> Verbs - action
     -   RetrieveData
+
+#### Exception Handling
+
+-   Only catch exception, if you have something to do with it.
+-   Always catch a specific exception.
+    -   catch(ModuleNotFound)
+-   Identify code fragments that may raise exceptions, and add try..catch on them.
