@@ -496,3 +496,13 @@
 -   Always catch a specific exception.
     -   catch(ModuleNotFound)
 -   Identify code fragments that may raise exceptions, and add try..catch on them.
+
+#### Logging
+
+-   Has two purposes
+    -   Track errors
+    -   Gather data
+        -   Which module is mostly visited.
+        -   Performance
+        -   User's flow
+-   '[Kibana](https://www.elastic.co/kibana)' is one of the popular logging tools.
