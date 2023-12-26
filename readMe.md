@@ -8,8 +8,8 @@
 4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
 5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
 6. [Selecting Tech-Stacks](https://github.com/RukshanDias/System-Design#selecting-technology-stack)
-7. [Meeting the \*-ilities](https://github.com/RukshanDias/System-Design/tree/WorkingBranch#meeting-the--ilities)
-8. Components Architecture
+7. [Meeting the \*-ilities](https://github.com/RukshanDias/System-Design#meeting-the--ilities)
+8. [Components Architecture](https://github.com/RukshanDias/System-Design#components-architecture)
 9. Design Patterns
 10. System Architecture
 11. Other Considerations
@@ -326,3 +326,183 @@
         -   Test methods by passing parameters and whether they're returning correct values.
 
 ---
+
+## 8. Components Architecture
+
+-   What is Software component?
+    -   A piece of code that runs in a single process. Aka not distributed.
+-   What is distributed systems?
+
+    -   Composed of independent software components.
+    -   Deployed on separate processes, containers, servers.
+    -   Modern systems are usually distributed.
+    -   Communicate using a network protocol.
+    -   examples: Microservices, server application & more.
+    -   ![](imgs/Distributed-System-diagram.png)
+
+-   2 levels of software architecture
+    1. Component's architecture
+        - Deals with inner components of the code.
+        - Interact with other components.
+        - Make the code fast & easy to maintain.
+    2. System architecture
+        - Bigger picture.
+        - Make sure the system is Scalable, Reliable, Fast & Easy to maintain.
+
+#### Layers
+
+-   A good software component will always have layers.
+-   ![layer architecture](imgs/layer-architecture.png)
+-   Purpose of Layers:
+    -   Able to write well formed & focused code.
+    -   modularity.
+-   Concepts of Layers:
+
+    -   **Code flow**:
+        -   A layer can only call a layer that directly benefits the code
+        -   A code can never call a code in a layer above it.
+        -   ![code flow in layer architecture](imgs/layer-codeFlow.png)
+    -   **Loose coupling**
+        -   Layer communicating with each other with minimum impact when there's a change.
+        -   This also called, dependency injection.
+    -   **Exception Handling**
+        -   Each layer must hide it's inner exceptions & not let other layers to know about it.
+
+-   Layer vs Tier
+    -   Layer: code that's part of component.
+    -   Tier: Distributed piece of code. independent components.
+    -   ![](imgs/layers-vs-tiers.png)
+
+---
+
+## 8. Components Architecture
+
+-   What is Software component?
+    -   A piece of code that runs in a single process. Aka not distributed.
+-   What is distributed systems?
+
+    -   Composed of independent software components.
+    -   Deployed on separate processes, containers, servers.
+    -   Modern systems are usually distributed.
+    -   Communicate using a network protocol.
+    -   examples: Microservices, server application & more.
+    -   ![](imgs/Distributed-System-diagram.png)
+
+-   2 levels of software architecture
+    1. Component's architecture
+        - Deals with inner components of the code.
+        - Interact with other components.
+        - Make the code fast & easy to maintain.
+    2. System architecture
+        - Bigger picture.
+        - Make sure the system is Scalable, Reliable, Fast & Easy to maintain.
+
+#### Layers
+
+-   A good software component will always have layers.
+-   ![layer architecture](imgs/layer-architecture.png)
+-   Purpose of Layers:
+    -   Able to write well formed & focused code.
+    -   modularity.
+-   Concepts of Layers:
+
+    -   **Code flow**:
+        -   A layer can only call a layer that directly benefits the code
+        -   A code can never call a code in a layer above it.
+        -   ![code flow in layer architecture](imgs/layer-codeFlow.png)
+    -   **Loose coupling**
+        -   Layer communicating with each other with minimum impact when there's a change.
+        -   This also called, dependency injection.
+    -   **Exception Handling**
+        -   Each layer must hide it's inner exceptions & not let other layers to know about it.
+
+-   Layer vs Tier
+    -   Layer: code that's part of component.
+    -   Tier: Distributed piece of code. independent components.
+    -   ![](imgs/layers-vs-tiers.png)
+
+#### Interfaces
+
+-   Declares the signature of an implementation.
+-   This makes code to be loosely coupled.
+-   Always try to use Interfaces, instead of direct reference between classes. (using new keyword)
+
+#### Dependency Injection
+
+-   "A technique where one object supplies the dependencies of another object."
+-   Makes the code modular, flexible & easy to maintain.
+-   Dependency injection using _Factory method_.
+    -   ![](imgs/Dependancy%20injection%20example.png)
+
+#### SOLID Principles
+
+[solid principles video 1](https://www.youtube.com/watch?v=kF7rQmSRlq0)
+[solid principles video 2](https://www.youtube.com/watch?v=x2y_lsIdC6c)
+
+![](imgs/SOLID%20principles.png)
+
+-   **Single responsibility**
+
+    -   ![](imgs/Single%20Responsibility%20example.png)
+    -   2 separate methods to compose and write the msg.
+
+-   **Open / Closed**
+    -   Able to extend the functionality without modifying the code.
+-   **Liskov Substitution**
+    -   Every subclass should be substitutable/exchangeable for their parent class. without any errors/issues.
+-   **Interface Segregation**
+    -   ![](imgs/Interface%20Segregation%20Principle.png)
+    -   Allows to implement only necessary functionalities.
+-   **Dependency Inversion**
+    -   High-level module must not depend on the low-level module, but they should depend on abstractions.
+
+#### Naming Conventions
+
+-   Set of rules for naming elements. Which makes code more readable.
+-   Two types:
+    1. Structure - casing, underscore
+    2. Content - words used in name
+
+##### 1. Structure
+
+-   Camel Case
+    -   more than one word.
+    -   used for naming CLASSES.
+    -   Upper:
+        -   class **C**arEngine
+    -   Lower
+        -   public **s**tartEngine
+-   Underscore
+    -   words separated with underscore.
+    -   Lower - for naming **variables**.
+        -   num_of_students = 10
+    -   Upper - for naming **constants**.
+        -   CONST DAYS_IN_WEEK = 7
+-   Hungarian Notation
+    -   Data type should be part of the name.
+    -   Mostly used in 90's.
+    -   string strFirstName = "name".
+
+##### 2. Content
+
+-   Class names -> Nouns - entity
+    -   DataRetriever
+-   Method names -> Verbs - action
+    -   RetrieveData
+
+#### Exception Handling
+
+-   Only catch exception, if you have something to do with it.
+-   Always catch a specific exception.
+    -   catch(ModuleNotFound)
+-   Identify code fragments that may raise exceptions, and add try..catch on them.
+
+#### Logging
+
+-   Has two purposes
+    -   Track errors
+    -   Gather data
+        -   Which module is mostly visited.
+        -   Performance
+        -   User's flow
+-   '[Kibana](https://www.elastic.co/kibana)' is one of the popular logging tools.
