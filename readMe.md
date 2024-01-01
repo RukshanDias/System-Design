@@ -2,14 +2,14 @@
 
 ### Content
 
-1. [What is Software Architect](https://github.com/RukshanDias/System-Design#whats-software-architect)
-2. [The Architectural mindset](https://github.com/RukshanDias/System-Design#the-architectural-mindset)
-3. [The Architecture process](https://github.com/RukshanDias/System-Design#the-architecture-process)
-4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#working-with-system-requirments)
-5. [Types of Applications](https://github.com/RukshanDias/System-Design#types-of-applications)
-6. [Selecting Tech-Stacks](https://github.com/RukshanDias/System-Design#selecting-technology-stack)
-7. [Meeting the \*-ilities](https://github.com/RukshanDias/System-Design#meeting-the--ilities)
-8. [Components Architecture](https://github.com/RukshanDias/System-Design#components-architecture)
+1. [What is Software Architect](https://github.com/RukshanDias/System-Design#1-whats-software-architect)
+2. [The Architectural mindset](https://github.com/RukshanDias/System-Design#2-the-architectural-mindset)
+3. [The Architecture process](https://github.com/RukshanDias/System-Design#3-the-architecture-process)
+4. [Working with System Requirements](https://github.com/RukshanDias/System-Design#4-working-with-system-requirments)
+5. [Types of Applications](https://github.com/RukshanDias/System-Design#5-types-of-applications)
+6. [Selecting Tech-Stacks](https://github.com/RukshanDias/System-Design#6-selecting-technology-stack)
+7. [Meeting the \*-ilities](https://github.com/RukshanDias/System-Design#7-meeting-the--ilities)
+8. [Components Architecture](https://github.com/RukshanDias/System-Design#8-components-architecture)
 9. Design Patterns
 10. System Architecture
 11. Other Considerations
