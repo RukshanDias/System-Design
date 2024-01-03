@@ -506,3 +506,47 @@
         -   Performance
         -   User's flow
 -   '[Kibana](https://www.elastic.co/kibana)' is one of the popular logging tools.
+
+---
+
+## 9. Design Patterns
+
+-   Collection of general, reusable solutions for common problems.
+-   Design patterns = Micro architecture
+
+### Factory Pattern
+
+-   " Creating objects without specifying exact class "
+-   Why?
+    -   avoid strong coupling.
+    -   easy to maintain.
+
+```
+>> Classes:
+    - Burger : abstract interface
+    - ChickenBurger -> implements Burger
+    - VeggieBurger -> implements Burger
+===========================================
+
+public class BurgerFactory {
+    public IShape createBurger(string burgerType) {  // factory implementation
+        switch (burgerType) {
+            case "chicken" :
+                return new ChickenBurger();
+            case "veggie" :
+                return new VeggieBurger();
+            default :
+                return null;
+        }
+    }
+}
+
+public class Restaurant {
+    public Burger orderBurger(burgerType: string) {
+        BurgerFactory factory = new BurgerFactory();
+        Burger myBurger = factory.createBurger(burgerType);  // applying
+        myBurger.prepare();
+        return myBurger;
+    }
+}
+```
