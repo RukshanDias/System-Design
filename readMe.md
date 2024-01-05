@@ -550,3 +550,10 @@ public class Restaurant {
     }
 }
 ```
+
+### Repository Pattern
+
+-   " Models not handling the actual work with the datastore should be oblivious to the datastore type "
+-   links with factory pattern
+-   instead of writing methods with sql statement, create repository interface with CRUD methods.
+-   ![](imgs/repository%20pattern.png)
