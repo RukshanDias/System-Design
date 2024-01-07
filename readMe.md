@@ -557,3 +557,9 @@ public class Restaurant {
 -   links with factory pattern
 -   instead of writing methods with sql statement, create repository interface with CRUD methods.
 -   ![](imgs/repository%20pattern.png)
+
+### Facade Pattern
+
+-   " Creating a layer of abstractions to mask complex actions "
+-   ![](imgs/facade%20pattern.png)
+-   in above the complex actions (account exists, withdraw, deposit) are abstracted.
