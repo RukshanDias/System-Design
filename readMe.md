@@ -563,3 +563,8 @@ public class Restaurant {
 -   " Creating a layer of abstractions to mask complex actions "
 -   ![](imgs/facade%20pattern.png)
 -   in above the complex actions (account exists, withdraw, deposit) are abstracted.
+
+### Command Pattern
+
+-   " all the actions's info is encapsulated within an object "
+-   You (client) give your order to the waiter (command), who knows how to communicate it to the chef(object).
