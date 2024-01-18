@@ -568,3 +568,18 @@ public class Restaurant {
 
 -   " all the actions's info is encapsulated within an object "
 -   You (client) give your order to the waiter (command), who knows how to communicate it to the chef(object).
+
+---
+
+## System Architecture
+
+-   Big picture.
+-   This includes:
+    -   Defining components.
+    -   Defining how components communicate.
+    -   Design capabilities: Scale, redundance, performance
+
+### Loose Coupling
+
+-   _" Making sure services are not tied one to another "_
+-   Easier to write tests and change code.
