@@ -583,3 +583,9 @@ public class Restaurant {
 
 -   _" Making sure services are not tied one to another "_
 -   Easier to write tests and change code.
+- [Loose vs Tight Coupling](https://www.youtube.com/watch?v=uWseUdUqM5U)
+-   Coupling - "How much 2 parts depend on each other"
+-   Cohesion - "How well code in a single part fits together"
+    | Not Recommended| Recommended|
+    :-------------------------:|:-------------------------:
+    ![](imgs/tight%20coupling%20&%20low%20cohesion.png)|![](imgs/loose%20coupling%20&%20high%20cohesion.png)
