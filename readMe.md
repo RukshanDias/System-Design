@@ -583,9 +583,19 @@ public class Restaurant {
 
 -   _" Making sure services are not tied one to another "_
 -   Easier to write tests and change code.
-- [Loose vs Tight Coupling](https://www.youtube.com/watch?v=uWseUdUqM5U)
+-   [Loose vs Tight Coupling](https://www.youtube.com/watch?v=uWseUdUqM5U)
 -   Coupling - "How much 2 parts depend on each other"
 -   Cohesion - "How well code in a single part fits together"
     | Not Recommended| Recommended|
     :-------------------------:|:-------------------------:
     ![](imgs/tight%20coupling%20&%20low%20cohesion.png)|![](imgs/loose%20coupling%20&%20high%20cohesion.png)
+
+### Stateless
+
+-   " App state only stored in - Data Store & UI "
+-   Data stored in code = stateful
+-   [Stateful vs Stateless](https://www.youtube.com/shorts/ksuuqgDTx3c)
+    | Stateful| Stateless|
+    :-------------------------:|:-------------------------:
+    ![stateful](imgs/stateful.png)|![stateless](imgs/stateless.png)
+    2nd attempt it'll go through 2nd server which don't have user details. | User details will be stored in DB. Can be stored in cache also like Redis.
