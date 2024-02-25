@@ -628,3 +628,8 @@ public class Restaurant {
     4. File & DB based
 
 -   ![Messaging](imgs/messaging%20summary.png)
+
+### Logging & Monitoring
+
+-   Central logging
+-   Correlation ID
