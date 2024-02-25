@@ -615,3 +615,16 @@ public class Restaurant {
 -   Types of Cache:
     -   In-process cache
     -   Distributed cache
+
+### Messaging
+
+-   " Communication between various services. "
+-   Messaging types:
+
+    1. REST api
+    2. HTTP Push (Pub-Sub)
+        - Once client subscribed it'll get notified. Web socket technology.
+    3. Queue
+    4. File & DB based
+
+-   ![Messaging](imgs/messaging%20summary.png)
