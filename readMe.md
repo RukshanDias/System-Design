@@ -599,3 +599,19 @@ public class Restaurant {
     :-------------------------:|:-------------------------:
     ![stateful](imgs/stateful.png)|![stateless](imgs/stateless.png)
     2nd attempt it'll go through 2nd server which don't have user details. | User details will be stored in DB. Can be stored in cache also like Redis.
+
+### Caching
+
+-   " Brings data closer to user, so it will retrieve faster ".
+
+|              |         Reliability          | Performance |
+| ------------ | :--------------------------: | ----------: |
+| **Database** |  High - data saved to disk   |        Good |
+| **Cache**    | Poor - data stored in memory |   Excellent |
+
+-   What to Cache?
+    -   Data that's frequently accessed.
+    -   rarely modified.
+-   Types of Cache:
+    -   In-process cache
+    -   Distributed cache
