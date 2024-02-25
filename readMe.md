@@ -568,3 +568,68 @@ public class Restaurant {
 
 -   " all the actions's info is encapsulated within an object "
 -   You (client) give your order to the waiter (command), who knows how to communicate it to the chef(object).
+
+---
+
+## System Architecture
+
+-   Big picture.
+-   This includes:
+    -   Defining components.
+    -   Defining how components communicate.
+    -   Design capabilities: Scale, redundance, performance
+
+### Loose Coupling
+
+-   _" Making sure services are not tied one to another "_
+-   Easier to write tests and change code.
+-   [Loose vs Tight Coupling](https://www.youtube.com/watch?v=uWseUdUqM5U)
+-   Coupling - "How much 2 parts depend on each other"
+-   Cohesion - "How well code in a single part fits together"
+    | Not Recommended| Recommended|
+    :-------------------------:|:-------------------------:
+    ![](imgs/tight%20coupling%20&%20low%20cohesion.png)|![](imgs/loose%20coupling%20&%20high%20cohesion.png)
+
+### Stateless
+
+-   " App state only stored in - Data Store & UI "
+-   Data stored in code = stateful
+-   [Stateful vs Stateless](https://www.youtube.com/shorts/ksuuqgDTx3c)
+    | Stateful| Stateless|
+    :-------------------------:|:-------------------------:
+    ![stateful](imgs/stateful.png)|![stateless](imgs/stateless.png)
+    2nd attempt it'll go through 2nd server which don't have user details. | User details will be stored in DB. Can be stored in cache also like Redis.
+
+### Caching
+
+-   " Brings data closer to user, so it will retrieve faster ".
+
+|              |         Reliability          | Performance |
+| ------------ | :--------------------------: | ----------: |
+| **Database** |  High - data saved to disk   |        Good |
+| **Cache**    | Poor - data stored in memory |   Excellent |
+
+-   What to Cache?
+    -   Data that's frequently accessed.
+    -   rarely modified.
+-   Types of Cache:
+    -   In-process cache
+    -   Distributed cache
+
+### Messaging
+
+-   " Communication between various services. "
+-   Messaging types:
+
+    1. REST api
+    2. HTTP Push (Pub-Sub)
+        - Once client subscribed it'll get notified. Web socket technology.
+    3. Queue
+    4. File & DB based
+
+-   ![Messaging](imgs/messaging%20summary.png)
+
+### Logging & Monitoring
+
+-   Central logging
+-   Correlation ID
