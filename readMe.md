@@ -571,7 +571,7 @@ public class Restaurant {
 
 ---
 
-## System Architecture
+## 10. System Architecture
 
 -   Big picture.
 -   This includes:
@@ -633,3 +633,50 @@ public class Restaurant {
 
 -   Central logging
 -   Correlation ID
+
+---
+
+## 11. Architecture Document
+
+### Structure
+
+-   ![Architecture document structure](imgs/architecture%20doc%20structure.png)
+
+#### i. Background
+
+-   describe system from business POV. No tech terms.
+-   Helps to,
+    -   validate the POV.
+    -   boost confidence.
+
+#### ii. Requirements
+
+-   Include functional & non-functional requirements.
+-   Make it brief.
+-   Helps to,
+    -   validate the understanding of requirements.
+    -   requirements dictate architecture.
+
+#### iii. Executive Summary
+
+-   Allow non tech people to understand the system.
+-   Write after writing the reset of the doc.
+-   Helps to,
+    -   Provide high-level view for non-tech. rich-picture type.
+    -   boost confidence the work.
+
+#### iv. Architectural Overview
+
+-   Present architecture to team. No deep-dive.
+-   ![Architectural Overview Structure](imgs/architecture%20doc%20overview%20chapter.png)
+-   Is tech-stack single? then include it here : else include it in next chapter.
+
+#### v. Component Drill-down
+
+-   Be extremely detailed. MUST include all insights.
+-   The center of the Architect s work.
+
+1. Components role.
+2. Tech stack.
+3. Component's architecture.
+4. Development instructions.
